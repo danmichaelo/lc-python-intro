@@ -395,4 +395,7 @@ print(total)
 > print('My favorite season is ', seasons[4])
 > ~~~
 > {: .python}
+> > ## Solution
+> > IndexError. Because the list has length 4 and the indices starts from 0, the index of the last element is 3, not 4.
+> {: .solution}
 {: .challenge}

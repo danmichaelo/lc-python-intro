@@ -138,8 +138,8 @@ result of call is: None
 > What does the following program print?
 >
 > ~~~
-> def report(pressure):
->     print('pressure is', pressure)
+> def report(temperature):
+>     print('temperature is', temperature)
 >
 > report(22.5)
 > ~~~
@@ -147,7 +147,7 @@ result of call is: None
 > >
 > > ## Solution
 > > ~~~
-> > pressure is 22.5
+> > temperature is 22.5
 > > ~~~
 > > {: .output}
 > {: .solution}

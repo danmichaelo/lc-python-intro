@@ -200,29 +200,6 @@ print(total)
     *   Assign that to `total`, replacing the current value.
 *   We have to add `number + 1` because `range` produces 0..9, not 1..10.
 
-> ## Classifying Errors
->
-> Is an indentation error a syntax error or a runtime error?
->
-> > ## Solution
-> >
-> >It is a syntax error. The problem has to do with the placement of the code, not its logic.
-> 
->{: .solution}{: .challenge}
-
-
-> ## Tracing Execution
->
-> Create a table showing the numbers of the lines that are executed when this program runs,
-> and the values of the variables after each line is executed.
->
-> ~~~
-> total = 0
-> for char in "tin":
->     total = total + 1
-> ~~~
-> {: .python}
-{: .challenge}
 
 > ## Reversing a String
 >
@@ -343,41 +320,6 @@ print(total)
 > >     sum += number
 > >     cumulative += [sum]
 > > print(cumulative)
-> > ~~~
-> > {: .python}
-> {: .solution}
-{: .challenge}
-
-> ## Identifying Variable Name Errors
->
-> 1. Read the code below and try to identify what the errors are
->    *without* running it.
-> 2. Run the code and read the error message.
->    What type of `NameError` do you think this is?
->    Is it a string with no quotes, a misspelled variable, or a 
->    variable that should have been defined but was not?
-> 3. Fix the error.
-> 4. Repeat steps 2 and 3, until you have fixed all the errors.
->
-> ~~~
-> for number in range(10):
->     # use a if the number is a multiple of 3, otherwise use b
->     if (Number % 3) == 0:
->         message = message + a
->     else:
->         message = message + "b"
-> print(message)
-> ~~~
-> {: .python}
-> > ## Solution
-> > ~~~
-> > for number in range(10):
-> >     # use a if the number is a multiple of 3, otherwise use b
-> >     if (Number % 3) == 0:
-> >         message = message + a
-> >     else:
-> >         message = message + "b"
-> > print(message)
 > > ~~~
 > > {: .python}
 > {: .solution}

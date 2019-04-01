@@ -237,6 +237,16 @@ print(total)
 > print(result)
 > ~~~
 > {: .python}
+> > ## Solution
+> > ~~~
+> > original = "tin"
+> > result = ""
+> > for char in original:
+> >     result = char + result
+> > print(result)
+> > ~~~
+> > {: .python}
+> {: .solution}
 {: .challenge}
 
 > ## Practice Accumulating
@@ -277,6 +287,35 @@ print(total)
 > # write the whole thing
 > ~~~
 > {: .python}
+> > ## Solution
+> > ~~~
+> > # Total length of the strings in the list: ["red", "green", "blue"] => 12
+> > total = 0
+> > for word in ["red", "green", "blue"]:
+> >     total = total + len(word)
+> > print(total)
+> > ~~~
+> > {: .python}
+> >
+> > ~~~
+> > # List of word lengths: ["red", "green", "blue"] => [3, 5, 4]
+> > lengths = []
+> > for word in ["red", "green", "blue"]:
+> >     lengths.append(len(word))
+> > print(lengths)
+> > ~~~
+> > {: .python}
+> >
+> > ~~~
+> > # Concatenate all words: ["red", "green", "blue"] => "redgreenblue"
+> > words = ["red", "green", "blue"]
+> > result = ""
+> > for word in words:
+> >     result = result + word
+> > print(result)
+> > ~~~~
+> > {: .python}
+> {: .solution}
 {: .challenge}
 
 > ## Cumulative Sum
@@ -286,6 +325,7 @@ print(total)
 > The result should be `[1, 3, 5, 10]`.
 >
 > ~~~
+> sum = 0
 > cumulative += [sum]
 > for number in data:
 > cumulative = []
@@ -294,6 +334,18 @@ print(total)
 > data = [1,2,2,5]
 > ~~~
 > {: .python}
+> > ## Solution
+> > ~~~
+> > sum = 0
+> > data = [1,2,2,5]
+> > cumulative = []
+> > for number in data:
+> >     sum += number
+> >     cumulative += [sum]
+> > print(cumulative)
+> > ~~~
+> > {: .python}
+> {: .solution}
 {: .challenge}
 
 > ## Identifying Variable Name Errors
@@ -317,6 +369,18 @@ print(total)
 > print(message)
 > ~~~
 > {: .python}
+> > ## Solution
+> > ~~~
+> > for number in range(10):
+> >     # use a if the number is a multiple of 3, otherwise use b
+> >     if (Number % 3) == 0:
+> >         message = message + a
+> >     else:
+> >         message = message + "b"
+> > print(message)
+> > ~~~
+> > {: .python}
+> {: .solution}
 {: .challenge}
 
 > ## Identifying Item Errors
